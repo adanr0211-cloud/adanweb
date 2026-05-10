@@ -1,18 +1,13 @@
-/* app/globals.css */
 @import "tailwindcss";
 
-@layer base {
-  html {
-    @apply scroll-smooth antialiased bg-[#050509] text-white;
-    -webkit-tap-highlight-color: transparent; /* Evita brillo azul en móvil al tocar */
-  }
-  
-  /* Profesionall Spacing Default: uniforme */
-  h1, h2, h3, h4, h5, h6 {
-    @apply font-lexend text-white tracking-tight;
-  }
+@theme {
+  --font-lexend: "Lexend", sans-serif;
+}
 
-  p {
-    @apply text-[#8A8F98] font-light;
-  }
+:root {
+  /* Aquí puedes mantener tus variables de color si tenías (ej: --background, etc) */
+}
+
+body {
+  font-family: var(--font-lexend);
 }
